@@ -1,0 +1,26 @@
+<h1>Filepond Demo</h1>
+
+<p>
+  Current User: <br />
+  <b><%= @user.name %></b>
+</p>
+
+<p>
+  Avatar: <br />
+  <% if @user.avatar.attached? %>
+    <%= image_tag(@user.avatar.variant(:thumb)) %>
+    <br />
+    <%= button_to 'Delete', destroy_avatar_path, method: :delete %>
+  <% else %>
+    No avatar
+  <% end %>
+</p>
+
+<div>
+  <%= form_with model: @user, url: update_avatar_path, method: :post do |f| %>
+    <%= f.label :avatar, 'Update your avatar' %>
+    <!-- We'll transform this input into a pond -->
+    <%= f.file_field :avatar, class: 'filepond', direct_upload: true %>
+    <%= f.button 'Update' %>
+  <% end %>
+</div>

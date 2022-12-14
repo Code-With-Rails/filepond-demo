@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FilepondDemo</title>
+    <title>FilePond Demo</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+
+    <!-- We add this here to load the CSS, because importmap does not support loading CSS and we want to avoid using js/css bundling -->
+    <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
   </head>
 
   <body>
