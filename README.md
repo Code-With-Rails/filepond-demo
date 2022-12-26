@@ -1,24 +1,27 @@
-# README
+# Code With Rails - FilePond Demo App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![How to Use FilePond   Active Storage](https://user-images.githubusercontent.com/16937/209497677-a0ace476-a04f-4efb-be8c-6d263ad5d0e0.png)
 
-Things you may want to cover:
+## DESCRIPTION
 
-* Ruby version
+This project is the demo app which accompanies the blog post at https://codewithrails.com/filepond-active-storage.
 
-* System dependencies
+## USAGE
 
-* Configuration
+To run the app, ensure you have Docker and docker-compose installed.
 
-* Database creation
+Run `docker compose up` and go to http://localhost:3000.
 
-* Database initialization
+To enter the development environment, run `docker compose run app bash`. From within this bash shell, you can run generators, rake tasks, etc.
 
-* How to run the test suite
+## RESOURCES
 
-* Services (job queues, cache servers, search engines, etc.)
+* [How to use FilePond with Rails' Active Storage](https://codewithrails.com/filepond-active-storage)
 
-* Deployment instructions
+## ABOUT
 
-* ...
+Interested in Ruby on Rails? Code With Rails is a technical blog featuring articles and tutorials on Rails development, deployment, and scaling.
+
+Visit us at https://codewithrails.com.
+
+(c) Copyright 2022 Code With Rails
