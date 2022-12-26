@@ -41,15 +41,7 @@ FilePond.setOptions({
     },
     fetch: {
       url: './filepond/fetch',
-      method: 'POST',
-      onload: (response) => {
-        console.log(response)
-        return response
-      },
-      ondata: (response) => {
-        console.log(response)
-        return response
-      }
+      method: 'POST'
     },
     revert: {
       url: './filepond/remove'
